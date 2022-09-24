@@ -1,0 +1,8 @@
+.header {
+    height: 237px;
+    font-family: Inter;
+}
+
+.header__title {
+    font-weight: 500;
+}
