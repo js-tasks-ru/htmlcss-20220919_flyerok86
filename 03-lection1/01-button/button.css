@@ -1,1 +1,106 @@
 /* Стилизация кнопки */
+.button {
+    --bg-button-primary-default: var(--primary);
+    --bg-button-primary-disabled: #4263EB;
+    --bg-button-primary-hover: #2342C0;
+    --bg-button-primary-active: #1a2978;
+    --color-button-primary-text: var(--white);
+    
+    --bg-button-secondary-default: var(--secondary);
+    --bg-button-secondary-disabled: #7048E8;
+    --bg-button-secondary-hover: #5028C6;
+    --bg-button-secondary-active: #3b1aa0;
+    --color-button-secondary-text: var(--white);
+
+    --bg-button-alternate-default: var(--white);
+    --bg-button-alternate-disabled: var(--white);
+    --bg-button-alternate-hover: var(--white);
+    --bg-button-alternate-active: var(--white);
+    --color-button-alternate-text: ##495057;
+    --color-button-alternate-border: #ACB5BD;
+    --color-button-alternate-border-hover: #212429;
+    
+    border: 1px solid transparent;
+    border-radius: 8px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    user-select: none;
+
+    text-align: center;
+    cursor: pointer;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;    /* перемещен в этот блок, чтобы не дублировать это свойство для всех цветовых тем */
+}
+
+.button_size_m {
+    width: 189px;
+    height: 48px;
+
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.button_primary {
+    background-color: var(--bg-button-primary-default);
+    color: var(--color-button-primary-text);
+}
+
+.button_primary:hover {
+    background-color: var(--bg-button-primary-hover);
+}
+
+.button_primary:active {
+    background-color: var(--bg-button-primary-active);
+}
+
+.button_primary:disabled {
+    background: var(--bg-button-primary-disabled);
+}
+
+.button_secondary {
+    background-color: var(--bg-button-secondary-default);
+    color: var(--color-button-primary-text);
+}
+
+.button_secondary:hover {
+    background-color: var(--bg-button-secondary-hover);
+}
+
+.button_secondary:active {
+    background-color: var(--bg-button-secondary-active);
+}
+
+.button_secondary:disabled {
+    background: var(--bg-button-secondary-disabled);
+}
+
+.button_alternate {
+    background-color: var(--bg-button-alternate-default);
+    color: var(--color-button-alternate-text);
+    border-color: var(--color-button-alternate-border) 
+}
+
+.button_alternate:hover {
+    background-color: var(--bg-button-alternate-hover);
+    border-color: var(--color-button-alternate-border-hover);
+}
+
+.button_alternate:active {
+    background-color: var(--bg-button-alternate-active);
+}
+
+.button_alternate:disabled {
+    background: var(--bg-button-alternate-disabled);
+    border-color: var(--color-button-alternate-border) 
+}

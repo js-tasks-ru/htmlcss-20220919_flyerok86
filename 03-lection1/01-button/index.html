@@ -4,8 +4,65 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./button.css">
+        <style>
+            .container {
+                max-width: 800px;
+                display: flex;
+                padding: 20px;
+                gap: 32px;
+            }
+
+            .container__cell {
+                display: flex;
+                flex-flow: column nowrap;
+            }
+            
+            .container__cell_margin_20 {
+                margin-top: 16px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="container">
+            <div class="container__cell">
+                <button class="button button_primary button_size_m">
+                    <span class="button__label">
+                        Primary
+                    </span>
+                </button>
+        
+                <button class="button button_primary button_size_m container__cell_margin_20" disabled>
+                    <span class="button__label">
+                        Primary
+                    </span>
+                </button>
+            </div>
+            <div class="container__cell">
+                <button class="button button_secondary button_size_m">
+                    <span class="button__label">
+                        Secondary
+                    </span>
+                </button>
+        
+                <button class="button button_secondary button_size_m container__cell_margin_20" disabled>
+                    <span class="button__label">
+                        Secondary
+                    </span>
+                </button>
+            </div>
+            <div class="container__cell">
+                <button class="button button_alternate button_size_m">
+                    <span class="button__label">
+                        Alternate
+                    </span>
+                </button>
+        
+                <button class="button button_alternate button_size_m container__cell_margin_20" disabled>
+                    <span class="button__label">
+                        Alternate
+                    </span>
+                </button>
+            </div>
+        </div>
     </body>
 </html>
