@@ -1,8 +1,11 @@
 .header {
     height: 237px;
-    font-family: Inter;
 }
 
 .header__title {
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
 }
