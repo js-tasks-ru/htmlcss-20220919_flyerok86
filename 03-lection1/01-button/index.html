@@ -4,8 +4,50 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./button.css">
+        <style>
+            .container {
+                max-width: 800px;
+                display: flex;
+                padding: 20px;
+                gap: 32px;
+            }
+
+            .container__cell {
+                display: flex;
+                flex-flow: column nowrap;
+            }
+            
+            .container__cell_margin_20 {
+                margin-top: 16px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="container">
+            <div class="container__cell">
+                <button class="button button_primary">
+                        Primary
+                </button>
+                <button class="button button_primary container__cell_margin_20" disabled>
+                        Primary
+                </button>
+            </div>
+            <div class="container__cell">
+                <button class="button button_secondary">
+                        Secondary
+                </button>
+                <button class="button button_secondary container__cell_margin_20" disabled>
+                        Secondary
+                </button>
+            </div>
+            <div class="container__cell">
+                <button class="button button_alternate">
+                        Alternate
+                </button>
+                <button class="button button_alternate container__cell_margin_20" disabled>
+                        Alternate
+                </button>
+            </div>
+        </div>
     </body>
 </html>
