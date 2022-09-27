@@ -6,7 +6,7 @@
 .footer__title {
     text-align: center;
     margin-top: 0;
-    
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -18,7 +18,7 @@
     max-width: 640px;
     height: 96px;
 
-    margin: 0 auto;
+    margin: 32px auto 0;
 
     font-family: 'Inter';
     font-style: normal;
