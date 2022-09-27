@@ -1,13 +1,11 @@
 .footer {
-    height: 384px;
-    font-family: 'Inter';
-    font-style: normal;
+    height: 314px;
+    margin-top: 70px;
 }
 
 .footer__title {
-    margin-top: 70px;
-
     text-align: center;
+    margin-top: 0;
     
     font-family: 'Inter';
     font-style: normal;
