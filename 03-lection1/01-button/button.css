@@ -22,6 +22,7 @@
     overflow: hidden;
 
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;    /* перемещен в этот блок, чтобы не дублировать это свойство для всех цветовых тем */
+
 }
 
 .button:disabled {
@@ -30,55 +31,55 @@
 }
 
 .button_primary {
-    background-color: #374FC7;
-    color: #ffffff;
+    background-color: var(--bg-button-primary-default);
+    color: var(--color-button-primary-text);
 }
 
 .button_primary:hover {
-    background-color: #2342C0;
+    background-color: var(--bg-button-primary-hover);
 }
 
 .button_primary:active {
-    background-color: #1a2978;
+    background-color: var(--bg-button-primary-active);
 }
 
 .button_primary:disabled {
-    background: #4263EB;
+    background: var(--bg-button-primary-disabled);
 }
 
 .button_secondary {
-    background-color: #7048E8;
-    color: #ffffff;
+    background-color: var(--bg-button-secondary-default);
+    color: var(--color-button-primary-text);
 }
 
 .button_secondary:hover {
-    background-color: #5028C6;
+    background-color: var(--bg-button-secondary-hover);
 }
 
 .button_secondary:active {
-    background-color: #3b1aa0;
+    background-color: var(--bg-button-secondary-active);
 }
 
 .button_secondary:disabled {
-    background: #7048E8;
+    background: var(--bg-button-secondary-disabled);
 }
 
 .button_alternate {
-    background-color: #ffffff;
-    color: #495057;
-    border-color: #ACB5BD; 
+    background-color: var(--bg-button-alternate-default);
+    color: var(--color-button-alternate-text);
+    border-color: var(--color-button-alternate-border); 
 }
 
 .button_alternate:hover {
-    background-color: #ffffff;
-    border-color: #212429;
+    background-color: var(--bg-button-alternate-hover);
+    border-color: var(--color-button-alternate-border-hover);
 }
 
 .button_alternate:active {
-    background-color: #ffffff;
+    background-color: var(--bg-button-alternate-active);
 }
 
 .button_alternate:disabled {
-    background: #ffffff;
-    border-color: #ACB5BD;
+    background: var(--bg-button-alternate-disabled);
+    border-color: var(--color-button-alternate-border);
 }
