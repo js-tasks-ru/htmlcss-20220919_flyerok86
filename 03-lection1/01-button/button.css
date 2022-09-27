@@ -22,7 +22,6 @@
     overflow: hidden;
 
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;    /* перемещен в этот блок, чтобы не дублировать это свойство для всех цветовых тем */
-
 }
 
 .button:disabled {
