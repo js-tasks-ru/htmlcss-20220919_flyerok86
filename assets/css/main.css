@@ -23,6 +23,41 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+
+    /* дополнительные цвета */
+
+    --blue-1: #374FC7;
+    --blue-2: #4263EB;
+    --blue-3: #2342C0;
+    --blue-4: #1a2978;
+ 
+    --purple-1: #7048E8;
+    --purple-2: #5028C6;
+    --purple-3: #3b1aa0;
+
+
+    /* семантический слой */
+    
+    --bg-button-primary-default: var(--blue-1);
+    --bg-button-primary-disabled: var(--blue-2);
+    --bg-button-primary-hover: var(--blue-3);
+    --bg-button-primary-active: var(--blue-4);
+    --color-button-primary-text: var(--white);
+    
+    --bg-button-secondary-default: var(--purple-1);
+    --bg-button-secondary-disabled: var(--purple-1);
+    --bg-button-secondary-hover: var(--purple-2);
+    --bg-button-secondary-active: var(--purple-3);
+    --color-button-secondary-text: var(--white);
+
+    --bg-button-alternate-default: var(--white);
+    --bg-button-alternate-disabled: var(--white);
+    --bg-button-alternate-hover: var(--white);
+    --bg-button-alternate-active: var(--white);
+    --color-button-alternate-text: var(--grey-4);
+    --color-button-alternate-border: var(--grey-3);
+    --color-button-alternate-border-hover: var(--black);
 }
 
 * {
