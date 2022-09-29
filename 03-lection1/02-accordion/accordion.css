@@ -1,16 +1,13 @@
 /* Стилизация аккордеона */
-.accordion {
-    width: 730px;
-}
-
 .accordion__item {
     padding: 24px 32px;
     margin-bottom: 8px;
 
-    background: #FFFFFF;
+    background: var(--white);
 
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     border-radius: 8px;
+    box-sizing: border-box;
 
     font-family: 'Inter';
     font-style: normal;
@@ -18,21 +15,21 @@
     font-size: 16px;
     line-height: 24px;
 
-    color: #212429;
+    color: var(--black);
 }
 
 .accordion__item:last-child {
     margin-bottom: 0;
 }
 
-.accordion__item[open] .icon-arrow {
-    transform: translateY(-50%) rotate(0deg);
-    transition: transform .3s ease-out 0s;
+.accordion__item[open] {
+    padding-bottom: 32px;
 }
 
 .accordion__summary {
-    display: block;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     user-select: none;
     cursor: pointer;
@@ -42,23 +39,22 @@
     display: none;
 }
 
-.accordion__icon-container {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    width: 18px;
-    height: 100%;
+.accrordion__title {
+    margin: 0;
 }
 
-.accordion__icon-container_valign_center {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(-180deg);
+.accordion__item[open] .accordion__icon-arrow {
+    transform: rotate(0deg);
+    transition: transform .3s ease-out 0s;
+}
+
+.accordion__icon-arrow {
+    transform: rotate(-180deg);
     transition: transform .3s ease-out 0s;
 }
 
 .accordion__description {
-    margin: 16px 18px 8px 0;
+    margin: 16px 18px 0 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
