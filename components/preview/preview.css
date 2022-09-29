@@ -14,7 +14,7 @@
 }
 
 .preview__cards-item {
-    flex: 1 1 calc(100% / 3 - 30px * 2);
+    flex: 1 0 calc(100% / 3 - 30px * 2 / 3);
     height: 367px;
     background: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
