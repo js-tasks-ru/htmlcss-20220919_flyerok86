@@ -1,5 +1,6 @@
 .skeleton {
-    width: 579px;
+    min-width: 300px;
+    max-width: 1000px;
     height: 192px;
     padding: 24px 40px 32px 24px;
 
@@ -22,6 +23,8 @@
 }
 
 .skeleton__header-avatar {
+    flex: none;
+
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -30,6 +33,8 @@
 
 .skeleton__header-description {
     margin-left: 16px;
+
+    flex: auto;
 
     display: flex;
     flex-flow: column nowrap;
@@ -42,11 +47,11 @@
 }
 
 .skeleton__header .skeleton__gradient-block:first-of-type {
-    width: 172px;
+    width: 36%;
 }
 
 .skeleton__header .skeleton__gradient-block:last-of-type {
-    width: 257px;
+    width: 54%;
 }
 
 .skeleton__content .skeleton__gradient-block{
