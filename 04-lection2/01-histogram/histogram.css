@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
 
-    width: 354px;
+    min-width: 220px;
     height: 185px;
 
     padding: 16px 24px 24px;
@@ -61,6 +61,6 @@
 }
 
 .histogram_columns-item {
-    width: 9px;
+    flex: auto;
     background: #4263EB;
 }
