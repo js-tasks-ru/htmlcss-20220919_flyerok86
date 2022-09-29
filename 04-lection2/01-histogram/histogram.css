@@ -37,7 +37,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #4263EB;
+    color: var(--blue-2);
     cursor: pointer;
 }
 
@@ -62,5 +62,5 @@
 
 .histogram_columns-item {
     flex: auto;
-    background: #4263EB;
+    background: var(--blue-2);
 }
