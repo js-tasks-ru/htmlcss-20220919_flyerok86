@@ -63,3 +63,48 @@
     font-weight: 900;
     src: url(./Inter/static/Inter-Black.ttf);
 }
+
+
+
+@font-face {
+    font-family: "Source_Sans_Pro";
+    font-style: normal;
+    font-weight: 200;
+    src: url(./Source_Sans_Pro/static/SourceSansPro-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Source_Sans_Pro";
+    font-style: normal;
+    font-weight: 300;
+    src: url(./Source_Sans_Pro/static/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: "Source_Sans_Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./Source_Sans_Pro/static/SourceSansPro-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: "Source_Sans_Pro";
+    font-style: normal;
+    font-weight: 600;
+    src: url(./Source_Sans_Pro/static/SourceSansPro-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Source_Sans_Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: url(./Source_Sans_Pro/static/SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Source_Sans_Pro";
+    font-style: normal;
+    font-weight: 900;
+    src: url(./Source_Sans_Pro/static/SourceSansPro-Black.ttf);
+}
