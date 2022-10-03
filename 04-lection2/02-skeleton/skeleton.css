@@ -14,7 +14,6 @@
 }
 
 .skeleton__header {
-    height: 64px;
     margin-bottom: 24px;
 
     display: flex;
@@ -41,24 +40,24 @@
 }
 
 .skeleton__gradient-block {
+    width: 10%;
     height: 20px;
     background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
-.skeleton__header .skeleton__gradient-block:first-of-type {
+.skeleton__gradient-block_width_s {
     width: 36%;
 }
 
-.skeleton__header .skeleton__gradient-block:last-of-type {
+.skeleton__gradient-block_width_m {
     width: 54%;
 }
 
-.skeleton__content .skeleton__gradient-block{
+.skeleton__gradient-block_width_l {
     width: 100%;
 }
 
 .skeleton__content {
-    height: 48px;
     display: flex;
     flex-flow: column nowrap;
     gap: 8px;
