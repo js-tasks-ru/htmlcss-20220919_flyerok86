@@ -38,6 +38,9 @@
 
     --grey-5: #F9FAFC;
 
+    --black-1: #212429;
+
+    --red-1: #D84910;
 
     /* семантический слой */
     
@@ -60,6 +63,8 @@
     --color-button-alternate-text: var(--grey-4);
     --color-button-alternate-border: var(--grey-3);
     --color-button-alternate-border-hover: var(--black);
+
+    --color-menu-active: var(--red-1);
 }
 
 * {
