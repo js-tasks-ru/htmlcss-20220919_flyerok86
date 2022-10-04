@@ -40,30 +40,28 @@
     height: 100%;
 }
 
-.calendar__item-week {
+.calendar__item {
     display: flex;
     justify-content: center;
-    align-items: center;
 
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    align-items: center;
+
     line-height: 20px;
+}
+
+.calendar__item_week {
+    font-family: 'Inter';
+    font-size: 14px;
+    
 
     color: var(--grey-6);
 }
 
-.calendar__item-day {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.calendar__item_day {
     font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
 
     color: var(--grey-7);
 }
@@ -77,35 +75,30 @@
     background-color: var(--blue-6);
 }
 
-.calendar__item-day:first-of-type {
-    grid-column-start: 4;
-    background-color: blue;
-}
-
-.calendar__item-week-mon {
+.calendar__item_day_mon {
     grid-column-start: 1;
 }
 
-.calendar__item-week-tue {
+.calendar__item_day_tue {
     grid-column-start: 2;
 }
 
-.calendar__item-week-wed {
+.calendar__item_day_wed {
     grid-column-start: 3;
 }
 
-.calendar__item-week-thu {
+.calendar__item_day_thu {
     grid-column-start: 4;
 }
 
-.calendar__item-week-fri {
+.calendar__item_day_fri {
     grid-column-start: 5;
 }
 
-.calendar__item-week-sat {
+.calendar__item_day_sat {
     grid-column-start: 6;
 }
 
-.calendar__item-week-sun {
+.calendar__item_day_sun {
     grid-column-start: 7;
 }
