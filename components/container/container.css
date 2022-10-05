@@ -1,15 +1,4 @@
 .container {
     max-width: 1110px;
     margin: 0 auto;
-
-    overflow: auto;         /* Чтобы margin внутренних блоков не схлопывался с родителем */
-}
-
-.container_grid {
-    padding-top: 36px;
-    padding-bottom: 92px;
-    display: grid;
-    grid-template: 1fr / calc(229px + 56px) minmax(400px, 825px); 
-
-    overflow: visible;      /* иначе sticky не работает */
 }

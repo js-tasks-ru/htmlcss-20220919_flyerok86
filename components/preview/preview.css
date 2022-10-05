@@ -20,38 +20,7 @@
     border-radius: 12px;
 }
 
-
-
-.preview_grid {
+.preview_border_none {
     border-top: none;
     border-bottom: none;
-}
-
-.preview__grid-left {
-    width: 229px;
-}
-
-.preview__grid-main {
-    padding: 32px 48px;
-
-    background: var(--white);
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
-}
-
-.preview__grid-main-title {
-    margin: 0;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 38px;
-
-    color: var(--grey-4);
-}
-
-.preview__grid-left_sticky {
-    position: sticky;
-    top: 20px;
 }
