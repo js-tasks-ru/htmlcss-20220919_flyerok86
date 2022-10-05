@@ -31,13 +31,20 @@
     --blue-2: #4263EB;
     --blue-3: #2342C0;
     --blue-4: #1a2978;
+    --blue-5: #A0B1F5;
+    --blue-6: #ebeffd;
  
     --purple-1: #7048E8;
     --purple-2: #5028C6;
     --purple-3: #3b1aa0;
 
     --grey-5: #F9FAFC;
+    --grey-6: #90A0B7;
+    --grey-7: #334D6E;
 
+    --black-1: #212429;
+
+    --red-1: #D84910;
 
     /* семантический слой */
     
@@ -60,6 +67,8 @@
     --color-button-alternate-text: var(--grey-4);
     --color-button-alternate-border: var(--grey-3);
     --color-button-alternate-border-hover: var(--black);
+
+    --color-menu-active: var(--red-1);
 }
 
 * {
