@@ -5,11 +5,7 @@
     right: 0;
     bottom: 0;
     display: none;
-}
 
-.modal__overlay {
-    width: 100%;
-    height: 100%;
     background-color: rgba(196, 196, 196, 0.5);
 }
 
