@@ -1,5 +1,4 @@
 .footer {
-    height: 314px;
     margin-top: 70px;
 }
 
@@ -27,4 +26,29 @@
     line-height: 24px;
 
     text-align: center;
+}
+
+.footer_grid {
+    margin-top: 0px;
+    height: 74px;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    background: var(--grey-5);
+}
+
+.footer__title_grid {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--grey-3);
 }
