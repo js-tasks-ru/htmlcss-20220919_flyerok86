@@ -1,8 +1,6 @@
 
-@media screen and (max-width: 2560px) {
-    body {
-        background-image: url("./public/forest_2560.jpg");
-    }
+body {
+    background-image: url("./public/forest_2560.jpg");
 }
 
 @media screen and (max-width: 1024px) {
@@ -22,8 +20,3 @@
         background-image: url("./public/forest_400.jpg");
     }
 }
-
-
-
-
-
