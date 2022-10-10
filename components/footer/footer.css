@@ -1,10 +1,10 @@
 .footer {
-    margin-top: 70px;
+    padding: 72px 136px;
 }
 
 .footer__title {
     text-align: center;
-    margin-top: 0;
+    margin: 0;
 
     font-family: 'Inter';
     font-style: normal;
@@ -29,8 +29,8 @@
 }
 
 .footer_grid {
-    margin-top: 0px;
-    height: 74px;
+    padding: 0px;
+    height: 130px;
 
     display: grid;
     justify-items: center;
