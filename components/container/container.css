@@ -1,6 +1,4 @@
 .container {
     max-width: 1110px;
     margin: 0 auto;
-
-    overflow: auto;         /* Чтобы margin внутренних блоков не схлопывался с родителем */
 }
