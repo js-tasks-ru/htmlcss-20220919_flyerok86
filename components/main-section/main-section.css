@@ -34,3 +34,21 @@
     position: sticky;
     top: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    .main-section {
+        grid-template: 1fr / 1fr;
+        padding: 0;
+    }
+
+    .main-section__menu {
+        display: none;
+    }
+
+    .main-section__content {
+        box-shadow: none;
+        border-radius: 0;
+
+        padding: 32px 0 20px;
+    }
+}
