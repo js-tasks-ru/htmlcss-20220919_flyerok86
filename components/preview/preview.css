@@ -5,7 +5,7 @@
 }
 
 .preview__cards {
-    margin: 68px 0 204px;
+    padding: 68px 0 204px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
