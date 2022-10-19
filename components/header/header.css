@@ -34,28 +34,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-}
-
-
-.header__right-block-item:first-child {
-    margin-left: 0;
-    color: var(--black);
-}
-
-.header__right-block-item {
-    margin-left: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--grey-3);
-
-    cursor: pointer;
-}
-
-.header__right-block-item:last-child {
-    margin-left: 56px;
+    gap: 56px;
 }
 
 @media screen and (max-width: 600px) {
@@ -67,8 +46,6 @@
     .header__title {
         margin: 48px 0 70px;
 
-        font-family: 'Inter';
-        font-style: normal;
         font-weight: 400;
         font-size: 28px;
         line-height: 38px;
