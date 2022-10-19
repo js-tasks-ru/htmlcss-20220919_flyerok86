@@ -4,13 +4,7 @@
     gap: 24px;
 }
 
-.main-menu__item:first-child {
-    margin-left: 0;
-    color: var(--black);
-}
-
 .main-menu__item {
-    /* margin-left: 24px; */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -21,6 +15,6 @@
     cursor: pointer;
 }
 
-.main-menu__item:last-child {
-    /* margin-left: 56px; */
+.main-menu__item-active {
+    color: var(--black);
 }
