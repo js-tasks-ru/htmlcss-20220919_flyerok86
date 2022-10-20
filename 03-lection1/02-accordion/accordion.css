@@ -16,6 +16,9 @@
     line-height: 24px;
 
     color: var(--black);
+
+    -webkit-user-select: none;  /* чтобы при клике на аккордеон автоматически не выделялся текст. Проблема в Safari*/
+    user-select: none;
 }
 
 .accordion__item:last-child {
@@ -27,16 +30,31 @@
 }
 
 .accordion__summary {
+    user-select: none;
+    cursor: pointer;
+}
+
+/* https://stackoverflow.com/a/66814239 */
+details > summary {
+    list-style: none;
+}
+  
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+   display: none;
+}
+
+summary:focus {
+    outline: none;
+}
+
+.accordion__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     user-select: none;
     cursor: pointer;
-}
-
-.accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
-    display: none;
 }
 
 .accrordion__title {
