@@ -30,6 +30,8 @@
     width: 16px;
     height: 16px;
 
+    color: var(--grey-4);
+    
     cursor: pointer;
 }
 
