@@ -4,21 +4,90 @@
     <head>
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="page">
             <header class="header">
-                <div class="container">
+                <div class="container container__max-height">
+                    <div class="header__top">
+                        <div class="header__logo">
+                            <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_73738_54)">
+                                <rect y="1" width="30" height="30" fill="#212429"/>
+                                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_73738_54">
+                                <rect width="110" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>   
+                        </div>
+                        <div class="header__right-block">
+                            <div class="main-menu">
+                                <div class="main-menu__item main-menu__item-active">Components</div>
+                                <div class="main-menu__item">About</div>
+                                <div class="main-menu__item">Contact</div>
+                            </div>
+                            <div class="theme-switcher">
+                                <svg width="124" height="28" viewBox="0 0 124 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16769_266)">
+                                    <g clip-path="url(#clip1_16769_266)">
+                                    <path d="M12 19C14.7614 19 17 16.7614 17 14C17 11.2386 14.7614 9 12 9C9.23858 9 7 11.2386 7 14C7 16.7614 9.23858 19 12 19Z" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 3V5" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 23V25" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.22021 6.21997L5.64021 7.63997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.3599 20.36L19.7799 21.78" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 14H3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 14H23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.22021 21.78L5.64021 20.36" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.3599 7.63997L19.7799 6.21997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <rect x="36.5" y="0.5" width="51" height="27" rx="13.5" fill="white" stroke="#ACB5BD"/>
+                                    <rect x="38" y="2" width="24" height="24" rx="12" fill="#ACB5BD"/>
+                                    <path d="M121 14.79C120.843 16.4922 120.204 18.1144 119.158 19.4668C118.113 20.8192 116.703 21.8458 115.096 22.4265C113.488 23.0073 111.748 23.1181 110.079 22.7461C108.411 22.3741 106.883 21.5345 105.674 20.3258C104.465 19.117 103.626 17.589 103.254 15.9205C102.882 14.252 102.993 12.5121 103.573 10.9043C104.154 9.29651 105.181 7.88737 106.533 6.84175C107.885 5.79614 109.508 5.15731 111.21 5C110.213 6.34827 109.734 8.00945 109.858 9.68141C109.983 11.3534 110.704 12.9251 111.889 14.1106C113.075 15.2961 114.647 16.0168 116.318 16.1415C117.99 16.2662 119.652 15.7866 121 14.79V14.79Z" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_16769_266">
+                                    <rect width="124" height="28" fill="white"/>
+                                    </clipPath>
+                                    <clipPath id="clip1_16769_266">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 2)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>                                    
+                            </div>
+                        </div>
+                    </div>              
                     <h1 class="header__title">Reusable component library</h1>
+                    <div class="header__tabs"></div>
                 </div>
             </header>
             <main class="preview">
                 <div class="container">
                     <div class="preview__cards">
-                        <div class="preview__cards-item"></div>
-                        <div class="preview__cards-item"></div>
-                        <div class="preview__cards-item"></div>
-                        <div class="preview__cards-item"></div> 
+                        <div class="card">
+                            <div class="card__block">Calendar component</div>
+                            <div class="card__title">Calendar</div>
+                            <div class="card__description">Container</div>
+                        </div>
+                        <div class="card">
+                            <div class="card__block">Avatar component</div>
+                            <div class="card__title">Avatar</div>
+                            <div class="card__description">Container</div>
+                        </div>
+                        <div class="card">
+                            <div class="card__block">Histogram component</div>
+                            <div class="card__title">Histogram</div>
+                            <div class="card__description">Container</div>
+                        </div>
+                        <div class="card">
+                            <div class="card__block">Modal component</div>
+                            <div class="card__title">Modal</div>
+                            <div class="card__description">Container</div>
+                        </div> 
                     </div>
                 </div>
             </main>

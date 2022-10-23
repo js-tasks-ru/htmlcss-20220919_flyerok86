@@ -1,0 +1,20 @@
+.main-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 24px;
+}
+
+.main-menu__item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+
+    cursor: pointer;
+}
+
+.main-menu__item-active {
+    color: var(--black);
+}

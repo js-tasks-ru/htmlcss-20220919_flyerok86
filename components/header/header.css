@@ -1,5 +1,5 @@
 .header {
-    height: 237px;
+    /* height: 237px; */
 }
 
 .header__title {
@@ -8,9 +8,54 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
+
+    margin: 40px 0;
 }
 
 .header_grid {
     height: 82px;
     background-color: var(--white);
+}
+
+.header__top {
+    padding-top: 25px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    cursor: pointer;
+}
+
+.header__right-block {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 56px;
+}
+
+@media screen and (max-width: 600px) {
+    .header__top {
+        padding-top: 16px;
+        justify-content: center;
+    }
+
+    .header__title {
+        margin: 48px 0 70px;
+
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .header__right-block {
+        display: none;
+    }
+
+    .header_grid {
+        background-color: var(--grey-5);
+    }
 }

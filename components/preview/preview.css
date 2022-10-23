@@ -5,22 +5,31 @@
 }
 
 .preview__cards {
-    margin: 68px 0 204px;
+    padding: 68px 0 92px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     gap: 30px;
 }
 
-.preview__cards-item {
-    flex: 0 1 calc(100% / 3 - 30px * 2 / 3);
-    height: 367px;
-    background: var(--white);
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
-}
-
 .preview_border_none {
     border-top: none;
     border-bottom: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .preview {
+        border-bottom: none;
+    }
+
+    .preview_media {
+        background: var(--white)
+    }
+
+    .preview__cards {
+        padding: 24px 0 204px;
+        gap: 16px;
+    }
 }
