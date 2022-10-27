@@ -34,10 +34,6 @@
     cursor: pointer;
 }
 
-summary:focus {
-    outline: none;
-}
-
 .accordion__header {
     display: flex;
     align-items: center;
