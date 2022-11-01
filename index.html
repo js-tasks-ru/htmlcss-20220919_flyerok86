@@ -62,7 +62,26 @@
                         </div>
                     </div>              
                     <h1 class="header__title">Reusable component library</h1>
-                    <div class="header__tabs"></div>
+                    <div class="header__tabs">
+                        <div class="tabs">
+                            <input type="radio" id="#all-tab" name="tabs" checked>
+                            <input type="radio" id="#complex-tab" name="tabs">
+                            <input type="radio" id="#simple-tab" name="tabs">
+                        
+                            <div class="tabs__scroller">
+                                <label for="#all-tab">All components</label>
+                                <label for="#complex-tab">Complex</label>
+                                <label for="#simple-tab">Simple</label>
+                            </div>
+                        
+                            <div class="tabs__content tabs__content_complex">
+                                <!-- Сложные компоненты -->
+                            </div>
+                            <div class="tabs__content tabs__content_simple">
+                                <!-- Простые компоненты -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </header>
             <main class="preview">

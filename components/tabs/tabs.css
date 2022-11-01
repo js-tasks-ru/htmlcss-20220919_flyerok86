@@ -1,0 +1,43 @@
+.tabs > input[name="tabs"] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.tabs__scroller {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40px;
+
+    overflow-x: scroll;
+}
+.tabs label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--gery-3);
+
+    cursor: pointer;
+}
+
+.tabs input[type="radio"] ~ .tabs__scroller label::after {
+    content: '';
+    display: none;
+    margin-top: 8px;
+    height: 5px;
+    background: var(--black-1);
+}
+
+.tabs input[id="#all-tab"]:checked ~ .tabs__scroller label[for="#all-tab"]::after,
+.tabs input[id="#complex-tab"]:checked ~ .tabs__scroller label[for="#complex-tab"]::after,
+.tabs input[id="#simple-tab"]:checked ~ .tabs__scroller label[for="#simple-tab"]::after {
+    display: block;
+}
+
+.tabs input[id="#all-tab"]:checked ~ .tabs__scroller label[for="#all-tab"],
+.tabs input[id="#complex-tab"]:checked ~ .tabs__scroller label[for="#complex-tab"]
+.tabs input[id="#simple-tab"]:checked ~ .tabs__scroller label[for="#simple-tab"] {
+    color: var(--black-1);
+}
