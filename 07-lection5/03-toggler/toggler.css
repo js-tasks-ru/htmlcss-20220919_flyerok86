@@ -1,5 +1,6 @@
 .togler {
     display: inline-block;
+    position: relative;
 }
 
 .togler__input {
