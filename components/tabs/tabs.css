@@ -1,4 +1,13 @@
-.tabs > input[name="tabs"] {
+.tabs {
+    border-bottom: 1px solid var(--grey-2);
+    background: var(--grey-5);
+}
+
+.tabs__container {
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs input[name="tabs"] {
     position: absolute;
     clip: rect(0,0,0,0);
 }
@@ -8,7 +17,9 @@
     flex-flow: row nowrap;
     gap: 40px;
 
-    overflow-x: scroll;
+    background-color: var(--white);
+
+    overflow-x: auto;
 }
 .tabs label {
     font-family: 'Inter';
@@ -22,7 +33,7 @@
     cursor: pointer;
 }
 
-.tabs input[type="radio"] ~ .tabs__scroller label::after {
+.tabs input[type="radio"] ~ .tabs__container label::after {
     content: '';
     display: none;
     margin-top: 8px;
@@ -30,14 +41,30 @@
     background: var(--black-1);
 }
 
-.tabs input[id="#all-tab"]:checked ~ .tabs__scroller label[for="#all-tab"]::after,
-.tabs input[id="#complex-tab"]:checked ~ .tabs__scroller label[for="#complex-tab"]::after,
-.tabs input[id="#simple-tab"]:checked ~ .tabs__scroller label[for="#simple-tab"]::after {
+.tabs input[id="#all-tab"]:checked ~ .tabs__container label[for="#all-tab"]::after,
+.tabs input[id="#complex-tab"]:checked ~ .tabs__container label[for="#complex-tab"]::after,
+.tabs input[id="#simple-tab"]:checked ~ .tabs__container label[for="#simple-tab"]::after {
     display: block;
 }
 
-.tabs input[id="#all-tab"]:checked ~ .tabs__scroller label[for="#all-tab"],
-.tabs input[id="#complex-tab"]:checked ~ .tabs__scroller label[for="#complex-tab"]
-.tabs input[id="#simple-tab"]:checked ~ .tabs__scroller label[for="#simple-tab"] {
+.tabs input[id="#all-tab"]:checked ~ .tabs__container label[for="#all-tab"],
+.tabs input[id="#complex-tab"]:checked ~ .tabs__container label[for="#complex-tab"]
+.tabs input[id="#simple-tab"]:checked ~ .tabs__container label[for="#simple-tab"] {
     color: var(--black-1);
+}
+
+.tabs__content {
+    display: none;
+}
+
+.tabs input[id="#all-tab"]:checked ~ .preview .tabs__content_all-components {
+    display: block;
+}
+
+.tabs input[id="#complex-tab"]:checked ~ .preview .tabs__content_complex {
+    display: block;
+}
+
+.tabs input[id="#simple-tab"]:checked ~ .preview .tabs__content_simple {
+    display: block;
 }
