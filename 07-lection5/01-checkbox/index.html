@@ -4,8 +4,25 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+        <style>
+            body {
+                padding: 30%;
+            }
+        </style>
     </head>
     <body>
-
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox"> 
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <div class="checkbox__icon">
+                        <svg class="checkbox__icon-svg">
+                            <use href="../../assets/images/icons-sprite.svg#checkbox-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="checkbox__title">checkbox</div>    
+            </div>
+        </label>
     </body>
 </html>
