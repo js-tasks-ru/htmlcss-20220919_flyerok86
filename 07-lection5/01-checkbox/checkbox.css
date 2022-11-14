@@ -56,7 +56,6 @@
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
     display: block;
     color: var(--white);
-    
 }
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {
