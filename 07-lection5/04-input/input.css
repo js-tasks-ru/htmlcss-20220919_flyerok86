@@ -1,6 +1,5 @@
 .input-text {
     display: inline-block;
-    width: 100%;
 }
 
 .input-text__state {
@@ -58,8 +57,10 @@
 
 .input-text__icon {
     position: absolute;
-    top: 18px;
+
     right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
     display: none;
 
     width: 24px;
