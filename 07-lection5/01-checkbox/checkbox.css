@@ -22,40 +22,45 @@
 
 .checkbox__control {
     position: relative;
-
     width: 28px;
     height: 28px;
-
     box-sizing: border-box;
     border: 1px solid var(--grey-2);
     border-radius: 4px;
-
     background: var(--white);
 }
 
 .checkbox__icon {
-    display: block;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+}
+
+.checkbox__icon-svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.checkbox__icon-svg {
-    width: 15px;
-    height: 13px;
+    width: 24px;
+    height: 24px;
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
     background: var(--blue-2);
+    border: 1px solid var(--blue-2);
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
     display: block;
+    color: var(--white);
+    
 }
 
-.checkbox__input:focus ~ .checkbox__state .checkbox__control {
-    border: 1px solid var(--blue-2);
+.checkbox__input:focus ~ .checkbox__state .checkbox__title {
+    text-decoration: underline;
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control {
