@@ -1,0 +1,83 @@
+.togler {
+    display: inline-block;
+    position: relative;
+}
+
+.togler__input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    appearance: none;
+    outline: none;
+}
+
+.togler__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.togler__control {
+    position: relative;
+    width: 52px;
+    height: 28px;
+
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    box-sizing: border-box;
+
+    background: var(--white);
+
+    cursor: pointer;
+}
+
+.togler__icon {
+    position: absolute;
+
+    top: 1px;
+    left: 1px;
+
+    width: 24px;
+    height: 24px;
+
+    background: var(--grey-2);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.togler__title {
+    cursor: pointer;
+    user-select: none;
+}
+
+.togler__input:checked ~ .togler__state .togler__control {
+    background: var(--blue-2);
+    border: 1px solid var(--blue-2);
+}
+
+.togler__input:checked ~ .togler__state .togler__icon {
+    background: var(--white);
+    left: auto;
+    right: 1px;
+}
+
+.togler__input:focus ~ .togler__state .togler__control {
+    border: 1px solid var(--blue-2);
+}
+
+.togler__input:active ~ .togler__state .togler__control {
+     border: 1px solid red;  /* цвет для теста */
+}
+
+.togler__input:disabled ~ .togler__state .togler__control {
+    background: var(--grey-2);;
+    border: 1px solid var(--grey-2);
+}
+
+.togler__input:disabled ~ .togler__state .togler__icon {
+    background: var(--grey-3);
+    left: 1px;
+}
+
+.togler__input:disabled ~ .togler__state .togler__title {
+    color: var(--grey-4);
+}
