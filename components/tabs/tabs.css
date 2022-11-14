@@ -7,7 +7,7 @@
     border-bottom: 1px solid var(--grey-2);
 }
 
-.tabs input[name="tabs"] {
+.tabs__input-control {
     position: absolute;
     clip: rect(0,0,0,0);
 }
@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.tabs input[type="radio"] ~ .tabs__container label::after {
+.tabs__input-control ~ .tabs__container .tabs__label::after {
     content: '';
     display: none;
     margin-top: 8px;
@@ -41,15 +41,10 @@
     background: var(--black-1);
 }
 
-.tabs input[id="#all-tab"]:checked ~ .tabs__container label[for="#all-tab"]::after,
-.tabs input[id="#complex-tab"]:checked ~ .tabs__container label[for="#complex-tab"]::after,
-.tabs input[id="#simple-tab"]:checked ~ .tabs__container label[for="#simple-tab"]::after {
+#all-tab:checked ~ .tabs__container .tabs__label[for="all-tab"]::after,
+#complex-tab:checked ~ .tabs__container .tabs__label[for="complex-tab"]::after,
+#simple-tab:checked ~ .tabs__container .tabs__label[for="simple-tab"]::after {
     display: block;
-}
-
-.tabs input[id="#all-tab"]:checked ~ .tabs__container label[for="#all-tab"],
-.tabs input[id="#complex-tab"]:checked ~ .tabs__container label[for="#complex-tab"]
-.tabs input[id="#simple-tab"]:checked ~ .tabs__container label[for="#simple-tab"] {
     color: var(--black-1);
 }
 
@@ -57,14 +52,8 @@
     display: none;
 }
 
-.tabs input[id="#all-tab"]:checked ~ .preview .tabs__content_all-components {
-    display: block;
-}
-
-.tabs input[id="#complex-tab"]:checked ~ .preview .tabs__content_complex {
-    display: block;
-}
-
-.tabs input[id="#simple-tab"]:checked ~ .preview .tabs__content_simple {
+#all-tab:checked ~ .preview .tabs__content_all-components,
+#complex-tab:checked ~ .preview .tabs__content_complex,
+#simple-tab:checked ~ .preview .tabs__content_simple {
     display: block;
 }
