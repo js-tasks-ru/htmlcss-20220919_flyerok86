@@ -21,7 +21,7 @@
 
     overflow-x: auto;
 }
-.tabs label {
+.tabs__label {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
