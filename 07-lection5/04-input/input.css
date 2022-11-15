@@ -68,7 +68,7 @@
     fill: none;
 }
 
-.input-text_success .input-text__icon-success, .input-text_invalid .input-text__icon-invalid {
+.input-text_success .input-text__icon_success, .input-text_invalid .input-text__icon_invalid {
     display: block;
 }
 
