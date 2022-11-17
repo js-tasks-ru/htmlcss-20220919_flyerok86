@@ -1,0 +1,59 @@
+.tabs {
+    border-bottom: 1px solid var(--grey-2);
+    background: var(--grey-5);
+}
+
+.tabs__container {
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs__input-control {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.tabs__scroller {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40px;
+
+    background-color: var(--white);
+
+    overflow-x: auto;
+}
+.tabs__label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--gery-3);
+
+    cursor: pointer;
+}
+
+.tabs__input-control ~ .tabs__container .tabs__label::after {
+    content: '';
+    display: none;
+    margin-top: 8px;
+    height: 5px;
+    background: var(--black-1);
+}
+
+#all-tab:checked ~ .tabs__container .tabs__label[for="all-tab"]::after,
+#complex-tab:checked ~ .tabs__container .tabs__label[for="complex-tab"]::after,
+#simple-tab:checked ~ .tabs__container .tabs__label[for="simple-tab"]::after {
+    display: block;
+    color: var(--black-1);
+}
+
+.tabs__content {
+    display: none;
+}
+
+#all-tab:checked ~ .preview .tabs__content_all-components,
+#complex-tab:checked ~ .preview .tabs__content_complex,
+#simple-tab:checked ~ .preview .tabs__content_simple {
+    display: block;
+}
